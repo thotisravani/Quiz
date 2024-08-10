@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            background-color: rgb(170, 235, 235);
+        }
+        .box {
+            height: 350px;
+            width: 300px;
+            background-color: rgb(247, 165, 165);
+            margin: 2cm 12cm;
+            padding: 20px;
+            border-radius: 15px;
+            border: 3px solid whitesmoke;
+        }
+        .btn {
+            width: 250px;
+            margin: 5px;
+            margin-left: 0.7cm;
+            padding: 8px;
+            text-align: left;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+        .next, .prev {
+            background-color: rgb(135, 120, 235);
+            color: white;
+            padding: 10px;
+            width: 100px;
+            margin-left: 0.7cm;
+            cursor: pointer;
+        }
+        .prev {
+            margin-left: 0.5cm;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>Simple Quiz</h1>
+    <hr>
+    <p id="question">Questions are</p>
+    <div id="answer-buttons">
+        <!-- Buttons will be dynamically inserted here by JavaScript -->
+        <button>option1</button>
+    </div>
+    <button id="prev" class="prev hidden">Previous</button>
+    <button id="next" class="next">Next</button>
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>
